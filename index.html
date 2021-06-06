@@ -5,11 +5,56 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+
+<style>
+
+.buttons {
+    margin: 1%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 1px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+</style>
+  </head>
  
 <body style="margin:0">
-
-
+ZSAZA
+<!-- Start Header -->
 <div class="header">
   <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
     <div class="container-fluid">
@@ -41,9 +86,7 @@
 </div>
 
 
-
-
-
+<!-- Start Home -->
 <table border="0" id="home" width="100%" cellpadding="0" cellspacing="0" bgcolor="#292929">
   <tr>
   	 <td>
@@ -70,15 +113,15 @@
       </td>
     </tr>
  </table>
+<!-- End Home -->
 
 
+<!-- Start About -->
 <table border="0" id="about" width="100%" cellpadding="0" cellspacing="0" bgcolor="#353535">
   <tr>
   	 <td>
   	 	<table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
-  	 		
-
-
+  	 		<!-- Heading Start-->
            <tr>
            	  <th height="160" colspan="2">
            	  	 <font face="arial" size="16" style="color: #0096FF;  margin-left: 63%;">
@@ -87,7 +130,7 @@
            	  	<hr width="70" color="#f3971b">
            	  </th>
            </tr>
-           
+           <!-- Heading  End-->
            <tr>
            	   <td width="35%">
            	   	  <img style="border-radius: 5%;" src="data:image/png;base64,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" alt="me" />
@@ -128,21 +171,21 @@
            	   	  </table>  
            	   </td>
            </tr>
-          
-
-
+          <!-- section padding bottom -->
            <tr>
            	  <td height="60" colspan="2">
                  
            	  </td>
            </tr>
-          
-
+          <!-- section padding bottom End-->
         </table>
       </td>
    </tr>
 </table>
+<!-- End About -->
 
+
+<!-- Start Services -->
 <table border="0" id="services" width="100%" cellpadding="0" cellspacing="0" bgcolor="#292929">
   <tr>
   	 <td>
@@ -156,8 +199,7 @@
            	  	<hr width="70" color="#0099ff">
            	  </td>
           </tr>
-      
-
+        <!-- Heading  End-->
         <tr>
            <td width="33.33%" align="center" valign="top" >
            	  <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
@@ -305,24 +347,21 @@
            	  </table>
            </td>
         </tr>
-
-
-
+        <!-- section padding bottom -->
            <tr>
            	  <td height="60" colspan="3">
                  
            	  </td>
            </tr>
-          
-
-
+          <!-- section padding bottom End-->
   	 	</table>
   	 </td>
   </tr>
 </table>
-
-
-
+<div class="buttons">
+  <button class="btn-hover color"><a href="login.html" style="text-decoration: none; color: #fff;">Click here to Login</a></button>
+</div>
+<!-- Start Footer -->
  <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#353535">
   <tr>
      <td>
@@ -465,8 +504,6 @@
     </td>
   </tr>
  </table>
-
-
-
+<!-- End Footer -->
 </body>
 </html>
