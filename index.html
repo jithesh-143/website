@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>STARTUPACE.IN</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+ 
+<body style="margin:0">
+
+
+<div class="header">
+  <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home"><img style="height: 45px; border-radius: 5%;" src="data:image/png;base64,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" alt="logo"> StartupAce</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+
+
+
+<table border="0" id="home" width="100%" cellpadding="0" cellspacing="0" bgcolor="#292929">
+  <tr>
+  	 <td>
+  	 	<table border="0" width="85%" cellpadding="5" cellspacing="0" align="center">
+           <tr>
+           	   <td align="center" valign="middle" height="30">
+           	   	 <h3  style="margin-top: 3%";>
+           	   	 	<marquee behavior="alternate" direction="left" scrollamount="2">
+           	   	 	<font face="arial" color="#ffffff" size="6">
+           	   	     Hi, We are looking for interns!!
+           	   	    </font>
+           	   	   </marquee>
+           	   	</h3>
+           	   	 <h1>
+           	   	 	<marquee behavior="alternate" direction="right" scrollamount="2">
+           	   	 	<font face="arial" color="#f3971b" size="7">
+           	   	     
+           	   	    </font>
+           	   	</marquee>
+           	   	</h1>
+           	   </td>
+           </tr>
+        </table>
+      </td>
+    </tr>
+ </table>
+
+
+<table border="0" id="about" width="100%" cellpadding="0" cellspacing="0" bgcolor="#353535">
+  <tr>
+  	 <td>
+  	 	<table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+  	 		
+
+
+           <tr>
+           	  <th height="160" colspan="2">
+           	  	 <font face="arial" size="16" style="color: #0096FF;  margin-left: 63%;">
+           	  	   About
+           	  	</font>
+           	  	<hr width="70" color="#f3971b">
+           	  </th>
+           </tr>
+           
+           <tr>
+           	   <td width="35%">
+           	   	  <img style="border-radius: 5%;" src="data:image/png;base64,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" alt="me" />
+           	   </td>
+           	   <td width="65%" valign="top">
+           	   	  <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+           	   	  	  <tr>
+           	   	  	  	 <td height="40" style="text-align:center;">
+           	   	  	  	 	<font face="arial" size="4" color=" #ffffff">
+           	   	  	  	     Hi, GUYS!!
+           	   	  	  	    </font>
+           	   	  	  	 </td>
+           	   	  	  </tr>
+           	   	  	  <tr>
+           	   	  	  	 <td style="text-align:center;">
+           	   	  	  	 	<font face="arial" size="5" style="font-weight: bold;" color=" #ffffff">
+           	   	  	  	  INTERNSHIP OPPURTUNITIES
+           	   	  	  	    </font>
+           	   	  	  	</td>
+           	   	  	  </tr>
+           	   	  	  <tr>
+           	   	  	  	<td>
+           	   	  	  		<p>
+           	   	  	  			<font face="arial" size="3" color="#c2c0c3">
+           	   	  	  			Are you a small business or a startup owner? Then you have found your hidden ace. We are a company that focuses on helping small ventures reach their full potential and avoid the common Startup mistakes. Maybe you are facing a tough decision or you need a new ad copy? Look no further, we have everything to get you started and keep you running!
+           	   	  	  		</font>
+           	   	  	  		</p>
+           	   	  	  		<p>
+           	   	  	  			<font face="arial" size="3" color="#c2c0c3">
+           	   	  	  			We are looking for young competetive mind students who have the ability to achieve their target.Those who feel the same can login to our webiste in the contact section.
+           	   	  	  		</p>
+           	   	  	  		<hr noshade>
+           	   	  	  		<br/>
+           	   	  	  		
+           	   	  	  		
+           	   	  	  	</td>
+           	   	  	  </tr>
+           	   	  </table>  
+           	   </td>
+           </tr>
+          
+
+
+           <tr>
+           	  <td height="60" colspan="2">
+                 
+           	  </td>
+           </tr>
+          
+
+        </table>
+      </td>
+   </tr>
+</table>
+
+<table border="0" id="services" width="100%" cellpadding="0" cellspacing="0" bgcolor="#292929">
+  <tr>
+  	 <td>
+  	 	<table border="0" style="margin-left: 5%;" width="85%" cellpadding="15" cellspacing="0" align="center">
+  	 	<!-- Heading Start-->
+          <tr>
+           	  <td height="160" align="center" valign="middle" colspan="3">
+           	  	 <font face="arial" size="6" color=" #0099ff">
+           	  	   Services
+           	  	</font>
+           	  	<hr width="70" color="#0099ff">
+           	  </td>
+          </tr>
+      
+
+        <tr>
+           <td width="33.33%" align="center" valign="top" >
+           	  <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
+           	  	<tr>
+           	  	   <td align="center" valign="middle" bgcolor="#353535" height="190">
+           	  	   	<font size="6" color="#0099ff">
+                      <span class="fa fa-laptop"></span>
+                    </font>
+                    <br/>
+                    <br/>
+                    <font size="5" color="#ffffff" face="arial">
+           	  	   	  Web Development
+           	  	    </font>
+           	  	   	<br/>
+           	  	   	
+           	  	   	<p>
+           	  	   	  <font face="arial" size="3" color="#c2c0c3">
+           	  	      Design Acoording to your wish.
+           	  	     </font>
+           	  	     
+           	  	   </p>
+           	  	   </td>
+           	  	</tr>
+           	  </table>
+           </td>
+
+            <td width="33.33%" align="center" valign="top">
+           	  <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
+           	  	<tr>
+           	  	   <td align="center" valign="middle" bgcolor="#353535" height="190">
+           	  	   	<font size="6" color="#0099ff">
+                      <span class="fa fa-mobile"></span>
+                    </font>
+                    <br/>
+                    <br/>
+                    <font size="5" color="#ffffff" face="arial">
+           	  	   	  Responsive Design
+           	  	    </font>
+           	  	   	<br/>
+           	  	   	
+           	  	   	<p>
+           	  	   	  <font face="arial" size="3" color="#c2c0c3">
+           	  	     Flexible service
+           	  	     </font>
+           	  	     
+           	  	   </p>
+           	  	   </td>
+           	  	</tr>
+           	  </table>
+           </td>
+           <td width="33.33%" align="center" valign="top">
+           	  <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
+           	  	<tr>
+           	  	   <td align="center" valign="middle" bgcolor="#353535" height="190">
+           	  	   	<font size="6" color="#0099ff">
+                      <span class="fa fa-pencil"></span>
+                    </font>
+                    <br/>
+                    <br/>
+                    <font size="5" color="#ffffff" face="arial">
+           	  	   	  Creative Design
+           	  	    </font>
+           	  	   	<br/>
+           	  	   	
+           	  	   	<p>
+           	  	   	  <font face="arial" size="3" color="#c2c0c3">
+           	  	     Mindblowing Creativeness
+           	  	     </font>
+
+           	  	   </p>
+           	  	   </td>
+           	  	</tr>
+           	  </table>
+           </td>
+        </tr>
+        <tr>
+           <td width="33.33%" align="center" valign="top">
+           	  <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
+           	  	<tr>
+           	  	   <td align="center" valign="middle" bgcolor="#353535" height="190">
+           	  	   	<font size="6" color="#0099ff">
+                      <span class="fa fa-code"></span>
+                    </font>
+                    <br/>
+                    <br/>
+                    <font size="5" color="#ffffff" face="arial">
+           	  	   	  Clean Code
+           	  	    </font>
+           	  	   	<br/>
+           	  	   	
+           	  	   	<p>
+           	  	   	  <font face="arial" size="3" color="#c2c0c3">
+           	  	      Perfect Structure
+           	  	     </font>
+           	  	   </p>
+           	  	   </td>
+           	  	</tr>
+           	  </table>
+           </td>
+
+            <td width="33.33%" align="center" valign="top">
+           	  <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
+           	  	<tr>
+           	  	   <td align="center" valign="middle" bgcolor="#353535" height="190">
+           	  	   	<font size="6" color="#0099ff">
+                      <span class="fa fa-support"></span>
+                    </font>
+                    <br/>
+                    <br/>
+                    <font size="5" color="#ffffff" face="arial">
+           	  	   	  Fast Support
+           	  	    </font>
+           	  	   	<br/>
+           	  	   	
+           	  	   	<p>
+           	  	   	  <font face="arial" size="3" color="#c2c0c3">
+           	  	      Quick Replies
+           	  	     </font>
+           	  	   </p>
+           	  	   </td>
+           	  	</tr>
+           	  </table>
+           </td>
+           <td width="33.33%" align="center" valign="top">
+           	  <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
+           	  	<tr>
+           	  	   <td align="center" valign="middle" bgcolor="#353535" height="190">
+           	  	   	<font size="6" color="#0099ff">
+                      <span class="fa fa-rocket"></span>
+                    </font>
+                    <br/>
+                    <br/>
+                    <font size="5" color="#ffffff" face="arial">
+           	  	   	  Branding Identity
+           	  	    </font>
+           	  	   	<br/>
+           	  	   	
+           	  	   	<p>
+           	  	   	  <font face="arial" size="3" color="#c2c0c3">
+           	  	     Trending brands
+           	  	     </font>
+           	  	   </p>
+           	  	   </td>
+           	  	</tr>
+           	  </table>
+           </td>
+        </tr>
+
+
+
+           <tr>
+           	  <td height="60" colspan="3">
+                 
+           	  </td>
+           </tr>
+          
+
+
+  	 	</table>
+  	 </td>
+  </tr>
+</table>
+
+
+
+ <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#353535">
+  <tr>
+     <td>
+      <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+      
+      <tr>
+        <td width="33.33%" valign="top">
+           <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
+             <tr>
+              <td align="center" valign="top">
+                <font color="#7cfc00" size="6">
+                  <span class="fa fa-phone"></span>
+                </font>
+                <br/><br/>
+                <font color="#ffffff" size="5" face="arial">
+                Phone No
+                  </font>
+                  <p>
+                    <font color="#c2c0c3" size="3" face="arial">
+                    +91 9996758764
+                   </font>
+                  </p>
+              </td>
+             </tr>
+           </table>
+        </td>
+        <td width="33.33%" valign="top">
+           <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
+             <tr>
+              <td align="center" valign="top">
+                <font color="white" size="6">
+                  <span class="fa fa-envelope"></span>
+                </font>
+                <br/><br/>
+                <font color="#ffffff" size="5" face="arial">
+                Email
+                  </font>
+                  <p>
+                    <font color="#c2c0c3" size="3" face="arial">
+                  startupace@gmail.com
+                   </font>
+                  </p>
+              </td>
+             </tr>
+           </table>
+        </td>
+
+        <td width="33.33%" valign="top">
+           <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
+             <tr>
+              <td align="center" valign="top">
+                <font color="red" size="6">
+                  <span class="fa fa-map-marker"></span>
+                </font>
+                <br/><br/>
+                <font color="#ffffff" size="5" face="arial">
+                Location
+                  </font>
+                  <p>
+                    <font color="#c2c0c3" size="3" face="arial">
+                    sec-90,Pune, Maharashtra, India
+                   </font>
+                  </p>
+              </td>
+             </tr>
+           </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <hr noshade>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" height="100" valign="top">
+          <table border="0" width="30%" cellpadding="0" cellspacing="0" align="center">
+            
+            <tr style="text-align: center;">
+               <td width="25%" align="center">
+                <table border="0" width="50" cellpadding="0" cellspacing="0" align="center" height="50" bgcolor="#1f51ff">
+                  <tr>
+                    <td align="center" valign="middle">
+                      <a href="">
+                      <font size="5" color="#ffffff">
+                      <span class="fa fa-facebook"></span>
+                       </font>
+                        </a>
+                    </td>
+                  </tr>
+                
+                </table>
+               </td>
+               <td width="25%" align="center">
+                <table border="0" width="50" cellpadding="0" cellspacing="0" align="center" height="50" bgcolor="#0096FF">
+                  <tr>
+                    <td align="center" valign="middle">
+                      <a href="">
+                      <font size="5" color="#ffffff">
+                      <span class="fa fa-skype"></span>
+                       </font>
+                    </a>
+                    </td>
+                  </tr>
+                
+                </table>
+               </td>
+               <td width="25%" align="center">
+                <table border="0" width="50" cellpadding="0" cellspacing="0" align="center" height="50" bgcolor="blue">
+                  <tr>
+                    <td align="center" valign="middle">
+                      <a href="">
+                      <font size="5" color="#ffffff">
+                      <span class="fa fa-linkedin"></span>
+                       </font>
+                       </a>
+                    </td>
+                  </tr>
+                
+                </table>
+               </td>
+               <td width="25%" align="center">
+                <table border="0" width="50" cellpadding="0" cellspacing="0" align="center" height="50" bgcolor="red">
+                  <tr>
+                    <td align="center" valign="middle">
+                      <a href="">
+                      <font size="5" color="#ffffff">
+                      <span class="fa fa-google-plus"></span>
+                       </font>
+                       </a>
+                    </td>
+                  </tr>
+                
+                </table>
+               </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      </table>
+    </td>
+  </tr>
+ </table>
+
+
+
+</body>
+</html>
